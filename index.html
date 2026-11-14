@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>South Korea's Clean Hydrogen Portfolio Standard (CHPS)</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/show.css">
+</head>
+<body>
+
+<!-- the background gradient (colours shift between scenes) -->
+<div id="bg"></div>
+
+<!-- THE STAGE: 1920 x 1080, scaled to fit. Every scene lives in here. -->
+<div id="stage">
+  <canvas id="cloud"></canvas>
+
+  <!-- ===== PAGE 1: COVER ===== -->
+  <section class="scene" id="sc-cover">
+    <p class="kicker" id="cv-kicker">Executive Energy Policy &amp; Market Briefing &middot; November 2026</p>
+    <h1 class="headline" id="cv-title">South Korea&rsquo;s Clean Hydrogen Portfolio Standard <em>(CHPS)</em></h1>
+    <svg id="cv-rule" viewBox="0 0 1620 4"><line id="cv-line" x1="0" y1="2" x2="1620" y2="2" stroke="#12a488" stroke-width="2"/></svg>
+    <ol id="cv-parts">
+      <li><b>01</b>Regulatory framework</li>
+      <li><b>02</b>Bidding criteria</li>
+      <li><b>03</b>Financial settlement</li>
+      <li><b>04</b>Export opportunities</li>
+    </ol>
+    <div id="cv-by">
+      <strong>Omar S. Al Saidi</strong>
+      <span>Electrical Engineer &middot; Hydrogen Policies &amp; Strategies Department</span>
+      <span>Ministry of Energy and Minerals &middot; Sultanate of Oman</span>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 2: REGULATORY FOUNDATION ===== -->
+  <section class="scene" id="sc-found">
+    <p class="kicker" id="fd-kicker">Regulatory foundation</p>
+    <h1 class="headline" id="fd-title">Hydrogen gets its <em>own</em> market</h1>
+    <p class="lead" id="fd-lead">Carved out of the Renewable Portfolio Standard (RPS)</p>
+    <p class="source" id="fd-src1">Legal basis: amendment to the Hydrogen Economy Promotion and Hydrogen Safety Management Act</p>
+    <div class="pin" id="fd-pin-rps"><i></i>RPS &middot; solar, wind &amp; other renewables</div>
+    <div class="pin" id="fd-pin-h2"><i></i>Hydrogen &rarr; its own market</div>
+
+    <svg id="fd-axis" viewBox="0 0 1620 20"><line id="fd-axis-line" x1="0" y1="10" x2="1620" y2="10" stroke="#0b2235" stroke-opacity=".35" stroke-width="2"/>
+      <circle class="fd-dot" id="fd-dot1" cx="80" cy="10" r="9"/><circle class="fd-dot" id="fd-dot2" cx="650" cy="10" r="9"/><circle class="fd-dot" id="fd-dot3" cx="1220" cy="10" r="9"/></svg>
+    <div class="fd-node" id="fd-n1">
+      <p class="fd-date">2023</p>
+      <p class="fd-big"><span class="big">20</span><span class="unit">year contracts</span></p>
+      <p class="fd-what">General hydrogen power bidding market opens</p>
+      <p class="fd-detail">First auctions &middot; distributed fuel cells</p>
+    </div>
+    <div class="fd-node" id="fd-n2">
+      <p class="fd-date">24 May 2024</p>
+      <p class="fd-big"><span class="big" id="fd-num2">0</span><span class="unit">GWh / yr target</span></p>
+      <p class="fd-what">&ldquo;World&rsquo;s <em>first</em> clean hydrogen power bidding market&rdquo;</p>
+      <p class="fd-detail">15-year contracts &middot; 24-week bid window &middot; online by 2028</p>
+      <p class="source">Source: MOTIE press release, 24 May 2024</p>
+    </div>
+    <div class="fd-node" id="fd-n3">
+      <p class="fd-date">2 Dec 2024</p>
+      <p class="fd-big"><span class="big" id="fd-num3">0</span><span class="unit">GWh / yr awarded</span></p>
+      <p class="fd-what">First clean hydrogen auction results</p>
+      <p class="fd-detail">5 companies &middot; 6 plants &middot; 6,172 GWh bid &middot; 1 winner</p>
+      <p class="source">Source: MOTIE / KPX press release, 2 Dec 2024</p>
+    </div>
+
+    <p class="kicker" id="fd-k2">Who does what</p>
+    <div class="fd-card" id="fd-motie">
+      <p class="label">MOTIE &middot; Ministry of Trade, Industry and Energy</p>
+      <h2>Sets the <em>rules</em></h2>
+      <ul><li>Annual target volumes</li><li>Contract durations</li><li>Clean threshold &le; 4.0 kg CO<sub>2</sub>e / kg H<sub>2</sub></li><li>KEPCO &amp; distribution utilities must buy</li></ul>
+    </div>
+    <div class="fd-card" id="fd-kpx">
+      <p class="label">KPX &middot; Korea Power Exchange</p>
+      <h2>Runs the <em>auction</em></h2>
+      <ul><li>Issues bid notices</li><li>Convenes the bidding committee &amp; expert panels</li><li>Announces the winners</li><li>kchps.kmos.kr</li></ul>
+    </div>
+    <div class="pin net" id="fd-pin-motie"><i></i>MOTIE &middot; rules</div>
+    <div class="pin net" id="fd-pin-kpx"><i></i>KPX &middot; auction</div>
+    <div class="pin net" id="fd-pin-kepco"><i></i>KEPCO &middot; buyer</div>
+    <div class="pin net" id="fd-pin-plants"><i></i>Bidding plants</div>
+  </section>
+
+  <!-- ===== PAGE 3: TWO-TIER MARKET ===== -->
+  <section class="scene" id="sc-tiers">
+    <p class="kicker" id="tr-kicker">Two-tier market architecture</p>
+    <h1 class="headline" id="tr-title">One standard, <em>two</em> tiers</h1>
+
+    <div class="tr-side" id="tr-gen">
+      <p class="label">General tier</p>
+      <p class="tr-years"><span class="big">20</span><span class="unit">year contracts</span></p>
+    </div>
+    <div class="tr-side" id="tr-cln">
+      <p class="label">Clean tier</p>
+      <p class="tr-years"><span class="big">15</span><span class="unit">year contracts</span></p>
+    </div>
+    <div class="pin" id="tr-pin-g"><i></i>Year 20</div>
+    <div class="pin" id="tr-pin-c"><i></i>Year 15</div>
+
+    <!-- one row of the comparison per click: a label + one value per lane -->
+    <div class="tr-row" id="tr-r2">
+      <p class="tr-rowlabel">Target volume</p>
+      <p class="tr-v tr-vg"><b>1,300</b> GWh / yr <span>2023 pilot &middot; ongoing</span></p>
+      <p class="tr-v tr-vc"><b>6,500</b> GWh / yr <span>inaugural 2024 tender</span></p>
+      <p class="source tr-note">Lane thickness to scale with volume</p>
+    </div>
+    <div class="tr-row" id="tr-r3">
+      <p class="tr-rowlabel">Eligible fuel</p>
+      <p class="tr-v tr-vg">By-product &amp; <b>gray</b> hydrogen</p>
+      <p class="tr-v tr-vc">Certified <b>clean</b> hydrogen <span>blue &amp; green &middot; &le; 4.0 kg CO<sub>2</sub>e / kg H<sub>2</sub></span></p>
+    </div>
+    <div class="tr-row" id="tr-r4">
+      <p class="tr-rowlabel">Technologies</p>
+      <p class="tr-v tr-vg"><b>Fuel cells</b> <span>e.g. PAFC, SOFC</span></p>
+      <p class="tr-v tr-vc"><b>Co-firing</b> <span>ammonia + coal &middot; hydrogen + LNG &middot; clean fuel cells</span></p>
+    </div>
+    <div class="tr-row" id="tr-r5">
+      <p class="tr-rowlabel">Primary objective</p>
+      <p class="tr-v tr-vg">Move existing fuel cells <b>out of the RPS</b></p>
+      <p class="tr-v tr-vc"><b>Deep decarbonisation</b> <span>large-scale clean H<sub>2</sub> demand</span></p>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 4: CLEAN HYDROGEN CERTIFICATION ===== -->
+  <section class="scene" id="sc-cert">
+    <p class="kicker" id="ct-kicker">Clean hydrogen certification</p>
+    <h1 class="headline" id="ct-title">Carbon intensity, <em>not</em> colour</h1>
+    <p class="lead" id="ct-lead">Four grades by lifecycle emissions<br>(kg CO<sub>2</sub>e / kg H<sub>2</sub>), technology-neutral</p>
+
+    <!-- axis and grade labels, pinned to the column of dots -->
+    <div class="pin flip ct-ax" id="ct-ax0"><i></i>0</div>
+    <div class="pin flip ct-ax" id="ct-ax1"><i></i>1</div>
+    <div class="pin flip ct-ax" id="ct-ax2"><i></i>2</div>
+    <div class="pin flip ct-ax" id="ct-ax3"><i></i>3</div>
+    <div class="pin ct-g" id="ct-g1"><i></i><b>Grade 1</b> &le; 0.1</div>
+    <div class="pin ct-g" id="ct-g2"><i></i><b>Grade 2</b> 0.1&ndash;1.0</div>
+    <div class="pin ct-g" id="ct-g3"><i></i><b>Grade 3</b> 1.0&ndash;2.0</div>
+    <div class="pin ct-g" id="ct-g4"><i></i><b>Grade 4</b> 2.0&ndash;4.0</div>
+    <div class="pin ct-g ct-ceil" id="ct-gc"><i></i><b>Ceiling</b> 4.0 kg</div>
+    <div class="pin ct-g ct-out" id="ct-gx"><i></i>Ineligible</div>
+
+    <div class="ct-focus" id="ct-f1">
+      <p class="label">Grade 1 &middot; the gold standard</p>
+      <p class="ct-big"><span class="big">&le; 0.1</span><span class="unit">kg CO<sub>2</sub>e / kg H<sub>2</sub></span></p>
+      <p class="ct-line">Typically green hydrogen from renewable electrolysis</p>
+    </div>
+    <div class="ct-focus" id="ct-f2">
+      <p class="label">The eligibility gate</p>
+      <p class="ct-big"><span class="big">4.0</span><span class="unit">kg ceiling</span></p>
+      <p class="ct-line">Grades 1&ndash;4 may enter the Clean auction. Above 4.0: <b>ineligible</b>.</p>
+    </div>
+    <div class="ct-focus" id="ct-f3">
+      <p class="label">Scoring</p>
+      <p class="ct-big"><span class="big">Grades 1&ndash;2</span></p>
+      <p class="ct-line">earn more <b>non-price points</b>, within the 40-point non-price criteria</p>
+    </div>
+
+    <!-- the system boundary over the supply chain -->
+    <div class="ct-box" id="ct-box-in"><span>Counted &middot; well to gate</span></div>
+    <div class="ct-box ct-box-out" id="ct-box-out"><span>Shipping &middot; excluded</span></div>
+    <div class="pin ct-c" id="ct-c-well"><i></i>Extraction</div>
+    <div class="pin ct-c" id="ct-c-plant"><i></i>Production</div>
+    <div class="pin ct-c" id="ct-c-gate"><i></i>Gate</div>
+    <div class="pin ct-c" id="ct-c-ship"><i></i>Sea transport</div>
+    <div class="pin ct-c" id="ct-c-port"><i></i>Korean port</div>
+    <div class="ct-focus ct-low" id="ct-f4">
+      <p class="ct-line"><b>Well-to-gate:</b> extraction, upstream fuel, production (electrolysis or reforming + CCUS), purification and compression.</p>
+    </div>
+    <div class="ct-focus ct-low" id="ct-f5">
+      <p class="ct-line"><b>Maritime shipping is not counted</b> <em>&mdash; distance carries no carbon penalty</em></p>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 5: BIDDING SCORECARD ===== -->
+  <section class="scene" id="sc-score">
+    <p class="kicker" id="sc-kicker">Bidding evaluation</p>
+    <h1 class="headline" id="sc-title">A <em>100-point</em> scorecard</h1>
+
+    <!-- block labels, pinned above the two blocks -->
+    <div class="sc-blk" id="sc-l60"><b>60</b><span>Price</span></div>
+    <div class="sc-blk sc-blk-np" id="sc-l40"><b>40</b><span>Non-price</span></div>
+
+    <!-- non-price criteria, pinned to their rows -->
+    <div class="pin sc-g" id="sc-gs"><i></i><b>10</b> Fuel supply stability</div>
+    <div class="pin sc-g" id="sc-gd"><i></i><b>10</b> Domestic ecosystem</div>
+    <div class="pin sc-g" id="sc-gg"><i></i><b>10&ndash;15</b> Clean H<sub>2</sub> grade</div>
+    <div class="pin sc-g sc-gf" id="sc-gf"><i></i><b>5</b> swing points</div>
+    <div class="pin sc-g" id="sc-ge"><i></i><b>5&ndash;10</b> Execution &amp; grid</div>
+
+    <div class="sc-hl" id="sc-hl-price"></div>
+    <div class="sc-hl" id="sc-hl-grade"></div>
+    <div class="sc-hl" id="sc-hl-oman"></div>
+
+    <!-- bids and the undisclosed ceiling -->
+    <div id="sc-cap"><span>Undisclosed ceiling</span></div>
+    <p class="tag-demo" id="sc-illu">Illustrative &middot; column height = bid price &middot; real prices are not published</p>
+
+    <div class="sc-t" id="sc-t1">
+      <p class="ct-line">Not a pure race to the bottom: <b>60 points</b> price, <b>40 points</b> execution &amp; sustainability.</p>
+    </div>
+    <div class="sc-t" id="sc-t2">
+      <p class="label">Price &middot; 60 points</p>
+      <p class="ct-line">Bid price (<b>KRW / kWh</b>) ranked against the other bids</p>
+      <p class="ct-line sc-sub">&hellip; subject to an <em>undisclosed</em> ceiling</p>
+    </div>
+    <div class="sc-t" id="sc-t3">
+      <p class="label">The secret ceiling</p>
+      <p class="ct-line">KPX sets a maximum bid price, <b>kept confidential</b> from bidders.</p>
+    </div>
+    <div class="sc-t" id="sc-t4">
+      <p class="label">Above the ceiling</p>
+      <p class="ct-line"><b>Disqualified</b>, even when the auction is undersubscribed.</p>
+      <p class="ct-big"><span class="big">750</span><span class="unit">of 6,500 GWh awarded, Dec 2024</span></p>
+    </div>
+    <div class="sc-t" id="sc-t5">
+      <p class="label">Non-price &middot; 40 points</p>
+      <p class="ct-line">Grade, supply, ecosystem, execution</p>
+    </div>
+    <div class="sc-t" id="sc-t6">
+      <p class="label">Grade carries points</p>
+      <p class="ct-line">A <b>Grade 1</b> project can beat a <b>slightly cheaper</b> Grade 4 project on total score.</p>
+    </div>
+    <div class="sc-t" id="sc-t7">
+      <p class="label">For Oman</p>
+      <p class="ct-line">Win <em>inside the 40</em>: supply stability + Grade 1, with Korean off-takers.</p>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 6: FINANCIAL SETTLEMENT ===== -->
+  <section class="scene" id="sc-settle">
+    <p class="kicker" id="st-kicker">Financial settlement &amp; risk hedging</p>
+    <h1 class="headline" id="st-title">Fifteen years of <em>certainty</em></h1>
+
+    <p class="st-line" id="st-l1">A <b>15-year contract for difference</b>, settled against the market price</p>
+    <p class="st-line" id="st-l2">The wholesale price (SMP) moves every hour, every year</p>
+    <p class="st-line" id="st-l3">Settlement = <b>contract price</b> &minus; <b>SMP</b>, paid in both directions</p>
+    <p class="st-line" id="st-l4">Net result: the producer earns the <b>contract price</b>, flat, for 15 years</p>
+    <p class="st-line" id="st-l5">Two parts: a <b>fixed</b> component in KRW and a <b>fuel</b> component</p>
+    <p class="st-line" id="st-l6">The fuel component follows <b>KRW / USD</b>, reset typically once a year</p>
+    <p class="st-line" id="st-l7">Shortfall or surplus within <b>&plusmn;10&ndash;20%</b> rolls into the next year (up to 1&ndash;2 years)</p>
+    <p class="st-line" id="st-l8">Bankable, <em>USD-linked</em>, fifteen-year off-take</p>
+
+    <svg id="st-chart" viewBox="0 0 1620 420">
+      <line x1="0" y1="420" x2="1620" y2="420" class="st-axis"/>
+      <text x="0" y="-14" class="st-ylab" id="st-ylab">Price (KRW / kWh)</text>
+      <path id="st-fixed" class="st-fixed"/>
+      <path id="st-fuel" class="st-fuel"/>
+      <path id="st-below" class="st-below"/>
+      <path id="st-above" class="st-above"/>
+      <path id="st-smp" class="st-smp"/>
+      <path id="st-contract" class="st-contract"/>
+      <text id="st-tcontract" class="st-lab" text-anchor="middle" x="1236">Contract price</text>
+      <text id="st-tsmp" class="st-lab st-lab-smp">SMP &middot; illustrative</text>
+      <g id="st-legend">
+        <rect x="1120" y="-6" width="16" height="16" rx="3" class="st-below"/><text x="1146" y="8" class="st-leg">KEPCO pays producer</text>
+        <rect x="1120" y="22" width="16" height="16" rx="3" class="st-above"/><text x="1146" y="36" class="st-leg">Producer refunds KEPCO</text>
+      </g>
+      <text id="st-tfixed" class="st-lab st-lab-in" x="24">Fixed &middot; CAPEX, O&amp;M, financing &middot; KRW, locked 15 years</text>
+      <text id="st-tfuel" class="st-lab st-lab-in" x="24">Fuel &middot; clean H&#8322; / NH&#8323; &middot; linked to KRW/USD</text>
+    </svg>
+    <div class="st-yr" id="st-yr1">Year 1</div>
+    <div class="st-yr" id="st-yr5">5</div>
+    <div class="st-yr" id="st-yr10">10</div>
+    <div class="st-yr" id="st-yr15">15</div>
+
+    <svg id="st-dial" viewBox="-110 -110 220 150">
+      <path d="M -90 0 A 90 90 0 0 1 90 0" class="st-dial-arc"/>
+      <line id="st-needle" x1="0" y1="0" x2="0" y2="-78" class="st-needle"/>
+      <circle r="7" class="st-hub"/>
+      <text y="30" text-anchor="middle" class="st-dial-t">KRW / USD</text>
+    </svg>
+    <p class="tag-demo" id="st-illu">Illustrative &middot; SMP path and FX steps are not real data</p>
+
+    <div class="st-gap" id="st-gap"></div>
+    <div class="pin" id="st-pin-short"><i></i>Year 3 &middot; short</div>
+    <div class="pin" id="st-pin-carry"><i></i>Carried into year 4</div>
+  </section>
+
+  <!-- ===== PAGE 7: MARKET REALITY & COASTAL INFRASTRUCTURE ===== -->
+  <section class="scene" id="sc-coast">
+    <p class="kicker" id="co-kicker">Market reality &amp; coastal infrastructure</p>
+    <h1 class="headline" id="co-title">Policy meets the <em>coast</em></h1>
+
+    <div class="pin co-site" id="co-p-samcheok"><i></i>Samcheok</div>
+    <div class="pin co-site" id="co-p-ulsan"><i></i>Ulsan</div>
+    <div class="pin co-site" id="co-p-yeosu"><i></i>Yeosu &middot; Gwangyang</div>
+    <div class="pin flip co-site" id="co-p-boryeong"><i></i>Boryeong</div>
+    <div class="pin flip co-site co-oman" id="co-p-oman"><i></i>To Oman &middot; Duqm &middot; Sohar &middot; Salalah</div>
+
+    <div class="co-card" id="co-c0">
+      <p class="ct-line">Korea has little land for cheap green hydrogen at scale, so CHPS runs on <b>coastal import hubs</b>.</p>
+    </div>
+    <div class="co-card" id="co-c1">
+      <p class="label">December 2024 winner &middot; KOSPO</p>
+      <h2>Samcheok Bitdream</h2>
+      <p class="ct-big"><span class="big">750</span><span class="unit">GWh / yr &middot; 15 years</span></p>
+      <ul><li><b>20% ammonia</b> co-firing in an existing coal unit</li><li>Commercial operation <b>2028</b></li><li>The sole winner of <b>6</b> bidding plants</li></ul>
+    </div>
+    <div class="co-card" id="co-c2">
+      <p class="label">East coast &middot; industrial hub</p>
+      <h2>Ulsan</h2>
+      <ul><li>Clean <b>ammonia import</b> &amp; storage terminal</li><li><b>Hydrogen pipeline</b> network</li><li>Industrial &amp; power <b>co-firing</b> on existing petrochemical port</li></ul>
+    </div>
+    <div class="co-card" id="co-c3">
+      <p class="label">South coast &middot; petrochemical &amp; power hub</p>
+      <h2>Yeosu &middot; Gwangyang</h2>
+      <ul><li>Clean <b>ammonia receiving</b> terminal</li><li><b>Cracking</b>: NH<sub>3</sub> back to H<sub>2</sub></li><li>LNG / hydrogen <b>co-firing</b> cluster</li></ul>
+    </div>
+    <div class="co-card" id="co-c4">
+      <p class="label">West coast &middot; clean hydrogen hub</p>
+      <h2>Boryeong</h2>
+      <ul><li>Hydrogen / ammonia <b>import terminal</b></li><li>Production &amp; <b>cracking</b> complex</li><li>Fuel for west-coast <b>co-firing</b> &amp; H<sub>2</sub> turbines</li></ul>
+    </div>
+    <div class="co-card" id="co-c5">
+      <p class="label">For Oman</p>
+      <h2>A direct <em>maritime</em> corridor</h2>
+      <p class="ct-line">Deep-water ammonia terminals in Korea, export ports in Oman.</p>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 8: 2038 ROADMAP & EXPORT OPPORTUNITIES ===== -->
+  <section class="scene" id="sc-road">
+    <p class="kicker" id="rd-kicker">2038 roadmap &middot; 11th Basic Plan</p>
+    <h1 class="headline" id="rd-title">Scaling to <em>42 TWh</em></h1>
+
+    <!-- chart in stage coordinates; the dots draw the area under the curve -->
+    <svg id="rd-chart" viewBox="0 0 1920 1080">
+      <line x1="840" y1="830" x2="1780" y2="830" class="rd-axis"/>
+      <text x="840" y="866" class="rd-tick" text-anchor="middle">2024</text>
+      <text x="1103" y="866" class="rd-tick" text-anchor="middle">2028</text>
+      <text x="1234" y="866" class="rd-tick" text-anchor="middle">2030</text>
+      <text x="1497" y="866" class="rd-tick" text-anchor="middle">2034</text>
+      <text x="1760" y="866" class="rd-tick" text-anchor="middle">2038</text>
+      <text x="840" y="300" class="rd-ylab">Clean hydrogen power &middot; TWh / yr</text>
+      <g id="rd-m1"><circle cx="840" cy="820.9" r="8" class="rd-dot"/><text x="822" y="790" class="rd-lab" text-anchor="end"><tspan class="rd-v">0.75</tspan> TWh &middot; 2024 award</text></g>
+      <g id="rd-m2"><circle cx="1234" cy="671.4" r="8" class="rd-dot"/><text x="1214" y="650" class="rd-lab" text-anchor="end"><tspan class="rd-v">13</tspan> TWh &middot; 2.1% &middot; 2030</text></g>
+      <g id="rd-m3"><circle cx="1760" cy="317.6" r="9" class="rd-dot rd-dot-big"/></g>
+      <g id="rd-m26"><line x1="971" y1="830" x2="971" y2="560" class="rd-mark"/><text x="983" y="578" class="rd-marklab">Nov 2026 &middot; MCEE round</text></g>
+    </svg>
+    <div id="rd-big"><span class="big" id="rd-num">0</span><span class="unit">TWh / yr</span>
+      <p class="rd-share" id="rd-s30"><b>2.1%</b> of the power mix &middot; 2030</p>
+      <p class="rd-share" id="rd-s38">&asymp; <b>6%</b> of the power mix &middot; 2038</p></div>
+    <p class="tag-demo" id="rd-illu">Milestones from the plans &middot; curve between them illustrative</p>
+
+    <div class="co-card rd-card" id="rd-c26">
+      <p class="label">November 2026 update &middot; MCEE</p>
+      <h2>The rules <em>moved</em></h2>
+      <ul><li><b>500 GWh / yr</b> clean round &middot; operating by 2030</li><li>Price <b>50 : 50</b> non-price</li><li>Coal co-firing <b>out</b>; LNG-H<sub>2</sub> co-firing, H<sub>2</sub> turbines &amp; fuel cells <b>in</b></li></ul>
+      <p class="source">Sources: MCEE public notice &amp; press release (2026); Energynews (Nov 2026)</p>
+    </div>
+    <div class="co-card rd-card" id="rd-cmol">
+      <p class="label">Two molecules, two jobs</p>
+      <h2>NH<sub>3</sub> ships &middot; H<sub>2</sub> <em>burns</em></h2>
+      <ul><li><b>Ammonia</b>: the carrier for seaborne imports</li><li><b>Cracked</b> at Ulsan, Yeosu, Boryeong</li><li><b>Hydrogen</b> into combined-cycle turbines &amp; fuel cells</li></ul>
+    </div>
+    <div class="co-card rd-card" id="rd-cpil">
+      <p class="label">For Oman &middot; four pillars</p>
+      <ol class="rd-pillars">
+        <li><b>Off-take at scale</b><span>1+ Mtpa green H<sub>2</sub> by 2030, up to 8.5 Mtpa by 2050</span></li>
+        <li><b>Grade 1 potential</b><span>&le; 0.1 kg CO<sub>2</sub>e / kg H<sub>2</sub> &rarr; top non-price points</span></li>
+        <li><b>Bankable contracts</b><span>15-year, USD-linked, CfD-backed off-take</span></li>
+        <li><b>Korean partners in Oman</b><span>POSCO &amp; Samsung Engineering in Hydrogen Duqm (~1.2 Mtpa green ammonia) &middot; Samsung C&amp;T in SalalaH2</span></li>
+      </ol>
+    </div>
+    <div class="pin rd-pp" id="rd-p1"><i></i>1</div>
+    <div class="pin rd-pp" id="rd-p2"><i></i>2</div>
+    <div class="pin rd-pp" id="rd-p3"><i></i>3</div>
+    <div class="pin rd-pp" id="rd-p4"><i></i>4</div>
+    <div class="pin rd-mol" id="rd-l-nh3"><i></i>NH&#8323; &middot; ammonia</div>
+    <div class="pin rd-mol" id="rd-l-h2"><i></i>H&#8322; &middot; hydrogen</div>
+    <div class="pin rd-mol" id="rd-l-crack"><i></i>Cracking</div>
+
+    <div class="rd-end" id="rd-end">
+      <p class="label">Strategic conclusion</p>
+      <h2>Oman, a <em>premier supplier</em> to Korea&rsquo;s CHPS</h2>
+      <p class="ct-line">Grade 1 molecules &middot; 15-year bankable supply &middot; a direct sea corridor</p>
+    </div>
+  </section>
+
+  <!-- ===== PAGE 9: CLOSING / Q&A ===== -->
+  <section class="scene" id="sc-close">
+    <h1 class="headline" id="cl-title">Thank you<br><em>Questions &amp; Discussion</em></h1>
+    <p class="lead" id="cl-sub">Building the Clean Hydrogen Bridge Between Oman and South Korea</p>
+    <div id="cl-by">
+      <strong>Omar S. Al Saidi</strong>
+      <span>Electrical Engineer &middot; Hydrogen Policies &amp; Strategies Department</span>
+      <span>Ministry of Energy and Minerals &middot; Sultanate of Oman</span>
+    </div>
+  </section>
+
+</div>
+
+<div id="grain"></div>
+<div id="vignette"></div>
+
+<!-- presenting tools -->
+<div id="pageno"></div>
+<div id="progress"><i></i></div>
+<div id="keytest"><p>Key tester &middot; D to hide</p></div>
+<div id="jumpbox"></div>
+<div id="toast"></div>
+<div id="help" class="overlay"></div>
+<div id="overview" class="overlay"></div>
+<div id="blank"></div>
+<div id="flash"></div>
+<div id="loader"><i></i></div>
+
+<!-- classic scripts only (this page must work from file://) -->
+<script src="vendor/gsap.min.js"></script>
+<script src="js/data-korea.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/engine.js"></script>
+<script src="assets/thumbs/thumbs.js"></script>
+<!-- extra scene files go here, before deck.js -->
+<script src="js/deck.js"></script>
+</body>
+</html>

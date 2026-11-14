@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presenter view</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/presenter.css">
+</head>
+<body>
+  <header id="bar">
+    <span id="p-click">click &ndash; / &ndash;</span>
+    <span id="p-page">page &ndash;</span>
+    <span id="p-title">Waiting for the show&hellip;</span>
+    <span id="p-name"></span>
+    <span class="spacer"></span>
+    <span id="p-link" class="link wait">connecting</span>
+    <span id="p-clock">--:--</span>
+    <span id="p-timer" title="Starts on your first click">00:00</span>
+  </header>
+
+  <main>
+    <section id="now">
+      <h4>Now <em id="p-blank"></em></h4>
+      <div class="screen" id="now-box"><iframe id="f-now" src="index.html?mode=mirror" tabindex="-1"></iframe></div>
+      <div id="p-progress"><i></i></div>
+      <div id="buttons">
+        <button id="b-back">&larr; Back</button>
+        <button id="b-next" class="primary">Next &rarr;</button>
+        <button id="b-black">Black</button>
+        <button id="b-reset">Reset timer</button>
+      </div>
+    </section>
+    <section id="side">
+      <h4>Next click <em id="p-nextname"></em></h4>
+      <div class="screen" id="next-box"><iframe id="f-next" src="index.html?mode=preview" tabindex="-1"></iframe><div id="p-end">End of the show</div></div>
+      <h4>Speaker notes</h4>
+      <div id="p-notes"></div>
+    </section>
+  </main>
+
+  <div id="p-nolink">
+    <div>
+      <h2>Open this from the show</h2>
+      <p>Open <b>index.html</b>, then press <b>P</b>. This window will link up by itself.</p>
+    </div>
+  </div>
+
+<script src="js/presenter.js"></script>
+</body>
+</html>
